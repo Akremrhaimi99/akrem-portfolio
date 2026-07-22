@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akrem Rhaimi — Ingénieur Big Data & IA</title>
+<meta name="description" content="Akrem Rhaimi, ingénieur Big Data & Business Intelligence, spécialisé en architecture RAG, systèmes multi-agents et développement full stack.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#top" class="logo mono">akrem<span class="path">@rhaimi</span><span class="cursor">_</span></a>
+    <div class="nav-links">
+      <a href="#about">à propos</a>
+      <a href="#experience">expérience</a>
+      <a href="#projects">projets</a>
+      <a href="#skills">compétences</a>
+      <a href="#contact">contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">me contacter</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="eyebrow">disponible pour des nouvelles opportunités</div>
+        <h1 class="hero-title">Akrem Rhaimi</h1>
+        <div class="hero-role">Ingénieur Big Data &amp; BI — Développeur Full&nbsp;Stack &amp; IA</div>
+        <p class="hero-desc">
+          Je conçois des systèmes multi-agents basés sur l'architecture RAG : ingestion de données,
+          bases vectorielles, LLM et automatisation du reporting. Du pipeline de données au produit déployé.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="cv/Akrem_Rhaimi_CV.pdf" class="btn btn-ghost" download>Télécharger le CV</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>3</strong>&nbsp;stages PFE</span>
+          <span><strong>9+</strong>&nbsp;projets livrés</span>
+          <span>Fouchana, Ben Arous, Tunisie</span>
+        </div>
+      </div>
+
+      <div>
+        <svg class="pipeline" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma d'un pipeline RAG : requête, embedding, base vectorielle, LLM, réponse">
+          <defs>
+            <path id="edge1" d="M 90 60 L 90 130" />
+            <path id="edge2" d="M 90 170 L 90 240" />
+            <path id="edge3" d="M 130 260 L 260 260" />
+            <path id="edge4" d="M 300 240 L 300 62" />
+            <path id="flowpath" d="M 90 60 L 90 240 L 130 260 L 260 260 L 300 240 L 300 62" />
+          </defs>
+
+          <use href="#edge1" class="edge"/>
+          <use href="#edge2" class="edge"/>
+          <use href="#edge3" class="edge"/>
+          <use href="#edge4" class="edge"/>
+
+          <!-- node: query -->
+          <rect x="30" y="20" width="120" height="42" rx="8" class="node-box"/>
+          <text x="50" y="38" class="node-label">Requête</text>
+          <text x="50" y="52" class="node-sub">utilisateur</text>
+
+          <!-- node: embedding -->
+          <rect x="30" y="130" width="120" height="42" rx="8" class="node-box active"/>
+          <text x="50" y="148" class="node-label">Embedding</text>
+          <text x="50" y="162" class="node-sub">Gemini Embedding</text>
+
+          <!-- node: vector db -->
+          <rect x="30" y="240" width="120" height="42" rx="8" class="node-box"/>
+          <text x="50" y="258" class="node-label">Vector DB</text>
+          <text x="50" y="272" class="node-sub">Milvus / Zilliz</text>
+
+          <!-- node: llm -->
+          <rect x="240" y="240" width="120" height="42" rx="8" class="node-box active"/>
+          <text x="260" y="258" class="node-label">LLM</text>
+          <text x="260" y="272" class="node-sub">Google Gemini</text>
+
+          <!-- node: response -->
+          <rect x="240" y="20" width="120" height="42" rx="8" class="node-box"/>
+          <text x="260" y="38" class="node-label">Réponse</text>
+          <text x="260" y="52" class="node-sub">+ rapport PDF</text>
+
+          <circle class="dot" r="4">
+            <animateMotion dur="10s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+              <mpath href="#flowpath"/>
+            </animateMotion>
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <div class="eyebrow">à propos</div>
+          <h2 style="margin-bottom:24px;">Du modèle de données au système en production.</h2>
+          <div class="about-text">
+            <p>
+              Diplômé <strong>Ingénieur Big Data &amp; Business Intelligence</strong> à l'ITEAM University
+              Polytechnique, après une licence en <strong>Génie Logiciel</strong> à la Faculté des Sciences de Tunis.
+              Je m'intéresse à l'IA appliquée : architecture RAG, systèmes multi-agents, et à tout ce qui relie
+              une base de données à un modèle de langage utile.
+            </p>
+            <p>
+              Mon dernier projet chez <strong>JeelQuest</strong> combinait ingestion vectorielle, LLM et
+              génération automatique de rapports — un système complet, du pipeline de données au produit
+              déployé. J'aime autant écrire le backend que concevoir l'interface qui l'expose.
+            </p>
+          </div>
+          <div class="stat-row">
+            <div class="stat"><div class="num">03</div><div class="label">stages PFE</div></div>
+            <div class="stat"><div class="num">09+</div><div class="label">projets livrés</div></div>
+            <div class="stat"><div class="num">FR&nbsp;/&nbsp;EN&nbsp;/&nbsp;AR</div><div class="label">langues</div></div>
+          </div>
+        </div>
+        <div class="about-photo">
+          <img src="images/akrem1.png" alt="Photo d'Akrem Rhaimi">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">expérience</div>
+        <h2>Parcours professionnel</h2>
+        <p>Trois stages, du prototype à la mise en production.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="commit">
+          <div class="commit-date">Fév — Juin 2026</div>
+          <div class="commit-rail"><div class="commit-dot"></div></div>
+          <div>
+            <div class="commit-hash">stage PFE</div>
+            <div class="commit-title">JeelQuest</div>
+            <div class="commit-org">Stagiaire PFE — Système multi-agents intelligent</div>
+            <ul>
+              <li>Conception d'un système multi-agents basé sur l'architecture Agentic RAG</li>
+              <li><strong style="color:var(--text)">Questy Chatbot Agent</strong> — agent conversationnel RAG + LLM (Gemini) avec fallback web DuckDuckGo</li>
+              <li><strong style="color:var(--text)">Questy Analytics Agent</strong> — analyse automatique des logs, rapports PDF hebdomadaires</li>
+              <li><strong style="color:var(--text)">Talentyz Analytics Agent</strong> — suivi académique des stagiaires (XP, complétion, engagement)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commit">
+          <div class="commit-date">Juil — Sep 2025</div>
+          <div class="commit-rail"><div class="commit-dot"></div></div>
+          <div>
+            <div class="commit-hash">stage</div>
+            <div class="commit-title">Neivos Groupe</div>
+            <div class="commit-org">Stagiaire — Système comptable intelligent</div>
+            <ul>
+              <li>Développement d'un assistant comptable basé sur RAG et recherche vectorielle</li>
+              <li>Stack : LangChain, Milvus, FastAPI, React.js, MongoDB, Gemini Flash</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commit">
+          <div class="commit-date">Fév — Juin 2022</div>
+          <div class="commit-rail"><div class="commit-dot"></div></div>
+          <div>
+            <div class="commit-hash">stage PFE</div>
+            <div class="commit-title">Sotrapil</div>
+            <div class="commit-org">Stagiaire PFE — Application de gestion des réunions</div>
+            <ul>
+              <li>Développement d'une application de gestion des réunions</li>
+              <li>Stack : XML, Java, Firebase</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">projets</div>
+        <h2>Projets sélectionnés</h2>
+        <p>Systèmes IA en production, applications full-stack et projets BI.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">01</span>
+            <a href="https://github.com/Akremrhaimi99/Chatbot-and-analytics-agents" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <h3>Système Multi-Agents Intelligent — JeelQuest</h3>
+          <p>Trois agents en production : chatbot conversationnel RAG, analyse automatique des logs et suivi de performance des stagiaires, avec génération de rapports PDF.</p>
+          <div class="tag-row">
+            <span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">MongoDB</span>
+            <span class="tag">Milvus / Zilliz</span><span class="tag">Gemini Embedding 2</span>
+            <span class="tag">Gemini Flash Lite</span><span class="tag">Pandas</span><span class="tag">Seaborn</span><span class="tag">FPDF2</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">02</span>
+            <a href="https://github.com/Akremrhaimi99/Smart-Accountant-App" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <h3>Système Comptable Intelligent</h3>
+          <p>Assistant comptable basé sur RAG : recherche vectorielle sur les documents comptables et génération de réponses contextualisées par LLM.</p>
+          <div class="tag-row">
+            <span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Milvus / Zilliz</span>
+            <span class="tag">BAAI/bge-base-en-v1.5</span><span class="tag">Gemini 2.5 Flash</span><span class="tag">MongoDB</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">03</span>
+            <a href="https://github.com/Akremrhaimi99/breast-cancer-app" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <h3>Détection du Cancer du Sein</h3>
+          <p>Application d'aide au diagnostic assistée par un modèle vision-langage (CLIP) pour la classification d'images médicales.</p>
+          <div class="tag-row">
+            <span class="tag">CLIP (VLM)</span><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">MongoDB</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">04</span>
+            <a href="https://github.com/Akremrhaimi99/emotion_recognition" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <h3>Détection des Émotions (texte)</h3>
+          <p>Projet DevOps de bout en bout : API de classification d'émotions à partir de texte, containerisée et déployée via un pipeline CI/CD sur un cluster Kubernetes hébergé sur serveur physique local.</p>
+          <div class="tag-row">
+            <span class="tag">Docker Compose</span><span class="tag">CI/CD</span><span class="tag">Kubernetes</span>
+            <span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">MongoDB</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">05</span>
+            <a href="https://github.com/Akremrhaimi99/Gestion-Stock" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <h3>Gestion des Stocks</h3>
+          <p>Application web de suivi et de gestion des stocks pour une petite structure : entrées, sorties et niveaux d'alerte.</p>
+          <div class="tag-row">
+            <span class="tag">Django</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SQLite</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">06</span>
+            <a href="https://github.com/Akremrhaimi99/HospitalTn" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <h3>Gestion des Rendez-vous — HospitalTn</h3>
+          <p>Plateforme de prise de rendez-vous médicaux : gestion des créneaux, patients et praticiens.</p>
+          <div class="tag-row">
+            <span class="tag">Laravel</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">07</span>
+            <a href="https://github.com/Akremrhaimi99/Auction-app" class="project-link" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+          <h3>Système de Gestion des Enchères</h3>
+          <p>Plateforme d'enchères en ligne : mise en relation d'acheteurs et de vendeurs avec suivi des offres en temps réel.</p>
+          <div class="tag-row">
+            <span class="tag">Django</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">SQLite</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="projects-more">
+        + projets académiques (détection de l'autisme, entrepôts de données BI) sur
+        <a href="https://github.com/Akremrhaimi99" target="_blank" rel="noopener">github.com/Akremrhaimi99</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">compétences</div>
+        <h2>Stack technique</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-label">// Ia &amp; llm</div>
+          <div class="skill-pills">
+            <span>LangChain</span><span>RAG</span><span>Agentic RAG</span><span>Google Gemini</span>
+            <span>Milvus / Zilliz</span><span>APScheduler</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">// Frameworks</div>
+          <div class="skill-pills">
+            <span>Django</span><span>FastAPI</span><span>Laravel</span><span>Spring Boot</span><span>ReactJS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">// Bases de données</div>
+          <div class="skill-pills">
+            <span>MySQL</span><span>MongoDB</span><span>SQL Server</span><span>PostgreSQL</span><span>Neo4j</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">// Data &amp; Cloud</div>
+          <div class="skill-pills">
+            <span>Hadoop</span><span>Spark</span><span>Kafka</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">// ETL &amp; BI</div>
+          <div class="skill-pills">
+            <span>Talend</span><span>SSIS</span><span>SSMS</span><span>Power BI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">// Devops</div>
+          <div class="skill-pills">
+            <span>Docker</span><span>Kubernetes</span><span>Jenkins</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">// Langages</div>
+          <div class="skill-pills">
+            <span>Python</span><span>Java</span><span>PHP</span><span>C</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">// Reporting</div>
+          <div class="skill-pills">
+            <span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>FPDF2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">parcours académique</div>
+        <h2>Formation</h2>
+      </div>
+
+      <div class="edu-list">
+        <div class="edu-item">
+          <div class="edu-year">2024 — 2026</div>
+          <div>
+            <h3>ITEAM University Polytechnique · Tunis</h3>
+            <p>Diplôme d'Ingénieur — Big Data &amp; Business Intelligence</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2023 — 2024</div>
+          <div>
+            <h3>Institut Supérieur des Langues Appliquées et Informatique de Béja</h3>
+            <p>Mastère Professionnel — Systèmes Embarqués &amp; IoT</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2020 — 2022</div>
+          <div>
+            <h3>Faculté des Sciences de Tunis (FST)</h3>
+            <p>Licence en Sciences Informatiques — Génie Logiciel</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2018 — 2020</div>
+          <div>
+            <h3>Institut Supérieur d'Informatique du Kef (ISIK)</h3>
+            <p>Tronc commun Informatique</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-inner">
+      <div>
+        <div class="eyebrow">contact</div>
+        <h2>Discutons de votre projet.</h2>
+        <p>Ouvert aux opportunités en Big Data, IA appliquée et développement full-stack. Réponse rapide par email.</p>
+        <a href="mailto:akremrhaimi@gmail.com" class="btn btn-primary">Envoyer un email</a>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:akremrhaimi@gmail.com" class="contact-row">
+          <span class="k">email</span><span class="v">akremrhaimi@gmail.com</span>
+        </a>
+        <a href="tel:+21624683196" class="contact-row">
+          <span class="k">téléphone</span><span class="v">+216 24 683 196</span>
+        </a>
+        <a href="https://www.linkedin.com/in/akrem-rhaimi-5823a6220" class="contact-row" target="_blank" rel="noopener">
+          <span class="k">linkedin</span><span class="v">/in/akrem-rhaimi</span>
+        </a>
+        <a href="https://github.com/Akremrhaimi99" class="contact-row" target="_blank" rel="noopener">
+          <span class="k">github</span><span class="v">/Akremrhaimi99</span>
+        </a>
+        <div class="contact-row">
+          <span class="k">localisation</span><span class="v">Fouchana, Ben Arous, TN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Akrem Rhaimi</span>
+  <span>conçu &amp; codé à la main</span>
+</footer>
+
+</body>
+</html>
