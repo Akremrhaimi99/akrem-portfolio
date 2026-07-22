@@ -142,6 +142,31 @@ nav {
 
 .nav-toggle { display: none; }
 
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 3px;
+}
+.lang-btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+  background: transparent;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.lang-btn:hover { color: var(--text); }
+.lang-btn.active {
+  color: var(--ink);
+  background: var(--accent-2);
+}
+
 /* ---------- HERO ---------- */
 .hero {
   padding: 168px 0 96px;
